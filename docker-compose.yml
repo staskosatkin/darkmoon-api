@@ -7,8 +7,12 @@ services:
       context: ./
       dockerfile: app.dockerfile
     working_dir: /var/www
+    expose:
+      - 9000
     volumes:
       - ./:/var/www
+      - ./xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
+      - ./storage/logs/xdebug:/var/log/xdebug
     environment:
       - "DB_PORT=3306"
       - "DB_HOST=database"
