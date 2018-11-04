@@ -1,6 +1,6 @@
 # Test framework
 
-## Installation
+## Installation environment
 
 `docker-compose up -d`
 
