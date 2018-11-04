@@ -8,6 +8,6 @@
 
 `docker run --rm -v $(pwd):/app composer install`
 
-## Run Unit Tests
+## Run Tests
 
 `docker run --rm -v $(pwd):/app composer run-script test`
